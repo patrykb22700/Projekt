@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="encje.Klient" table="klient">
+		<id name="id" column="id">
+			<generator class="increment" />
+		</id>
+		<property name="imie" column="imie"/>
+		<property name="nazwisko" column="nazwisko"/>
+                <set cascade="persist" name="zamowienia" inverse="true">
+                    <key column="id" />
+                    <one-to-many class="encje.Zlecenie"/>
+                </set>
+                <joined-subclass name="encje.KlientFirmowy" table="klient_firmowy">
+                   <key column="klient_id"/>
+                   <property name="nazwa_firmy" column="nazwa_firmy"/> 
+                   <property name="NIP" column="nip"/> 
+                </joined-subclass>
+                <joined-subclass name="encje.KlientPrywatny" table="klient_prywatny">
+                   <key column="klient_id"/>
+                   <property name="dataUrodzenia" column="data_urodzenia"/> 
+                </joined-subclass>
+        </class>
+        <class name="encje.Zlecenie" table="zlecenie">
+            <id name="id" column="id">
+                <generator class="increment"/>
+            </id>
+            <property name="data" column="data" type="date"/>
+            <property name="adres" column="adres"/>
+            <many-to-one name="klient" column="klient" not-null="true"/>
+        </class>
+        <class name="encje.Admin" table="admin">
+            <id name="id" column="id">
+                <generator class="increment"/>
+            </id>
+            <property name="login" column="login"/>
+            <property name="password" column="password"/>
+        </class>
+		
+</hibernate-mapping>

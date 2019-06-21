@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="test3.KontrolMain">
+   <children>
+      <Button fx:id="log" contentDisplay="CENTER" layoutX="298.0" layoutY="337.0" mnemonicParsing="false" onAction="#logg" prefHeight="61.0" prefWidth="204.0" text="Zaloguj się aby zarządzać!" />
+      <TextField fx:id="login" layoutX="232.0" layoutY="230.0" onKeyPressed="#afterLoginKey" prefHeight="25.0" prefWidth="270.0" promptText="Twój login" />
+      <PasswordField fx:id="password" layoutX="232.0" layoutY="275.0" onKeyPressed="#afterLoginKey" prefHeight="25.0" prefWidth="270.0" promptText="Twoje Hasło" />
+      <Button fx:id="getlogged" layoutX="519.0" layoutY="275.0" mnemonicParsing="false" onAction="#afterLogin" prefHeight="25.0" prefWidth="149.0" text="Zaloguj" />
+      <Button fx:id="openPanel" layoutX="298.0" layoutY="346.0" mnemonicParsing="false" onAction="#openPanelAction" prefHeight="44.0" prefWidth="204.0" text="Otwórz panel zarządzania " />
+      <Button fx:id="back" layoutX="66.0" layoutY="487.0" mnemonicParsing="false" onAction="#backFromLogging" prefHeight="25.0" prefWidth="60.0" text="Wróć" />
+      <Button fx:id="logOut" layoutX="661.0" layoutY="487.0" mnemonicParsing="false" onAction="#outlog" text="Wyloguj" />
+      <Label fx:id="passwordLabel" alignment="CENTER" layoutX="166.0" layoutY="279.0" prefHeight="17.0" prefWidth="44.0" text="Hasło" />
+      <Label fx:id="loginLabel" alignment="CENTER" layoutX="166.0" layoutY="234.0" prefHeight="17.0" prefWidth="44.0" text="Login" />
+   </children>
+</Pane>

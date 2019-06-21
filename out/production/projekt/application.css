@@ -1,0 +1,105 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2018-12-29, 12:49:12
+    Author     : LamaR
+*/
+
+#mainPane{
+    -fx-background-color:  #1897b4 ;
+
+}
+
+#newClientPane{
+    -fx-background-color:  #1897b4 ;
+}
+#panelPane{
+    -fx-background-color:  #1897b4 ;
+}
+#paneEdit{
+    -fx-background-color:  #1897b4 ;
+}
+
+.label{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 12;
+
+}
+.button{
+    -fx-text-fill: white;
+    -fx-background-color: #1786a3;
+    -fx-border-color: white;
+    -fx-border-width: 2px;
+    -fx-border-style:solid;
+    -fx-font-size: 12;
+}
+.button:hover{
+    -fx-background-color:#1987b4;
+}
+.button:focused{
+    -fx-border-color:black;
+    -fx-background-color:#1987b4;
+}
+.button:pressed{
+    -fx-text-fill: white;
+    -fx-background-color: #2897b4;
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-font-size: 13;
+    -fx-border-style: solid;
+}
+
+.text-field{
+    -fx-background-color: #29a8c5;
+    -fx-prompt-text-fill: white;
+    -fx-border-color:white;
+}
+
+.text-field:focused {
+    -fx-background-color: #29a8c5;
+    -fx-border-color: black;
+
+}
+.list{
+    -fx-border-color: white;
+    -fx-border-width: 1 1 1 1;
+    -fx-border-style: solid;
+}
+.list-cell{
+    -fx-background-color: #29a8c5;
+}
+.list-cell:filled:selected:focused, .list-cell:filled:selected {
+    -fx-background-color: linear-gradient(#328BDB 0%, #207BCF 25%, #1973C9 75%, #0A65BF 100%);
+    -fx-text-fill: white;
+}
+
+.list-cell:even { /* <=== changed to even */
+    -fx-background-color: white;
+}
+
+.list-cell:filled:hover {
+    -fx-background-color: #0093ff;
+    -fx-text-fill: white;
+}
+.choice-box:focused{
+    -fx-border-color: black;
+}
+.choice-box .context-menu { 
+    -fx-background-color: #29a8c5; 
+}
+.choice-box .menu-item:focused {
+    -fx-background-color: linear-gradient(#328BDB 0%, #207BCF 25%, #1973C9 75%, #0A65BF 100%); 
+}
+.choice-box {
+    -fx-background-color: #29a8c5; 
+    -fx-border-color: white;
+    -fx-border-width: 1 1 1 1;
+    -fx-border-style: solid;
+}
+
+
+
