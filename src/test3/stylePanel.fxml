@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="panelPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="test3.KontrolPanel">
+   <children>
+      <ChoiceBox fx:id="whichClient" layoutX="583.0" layoutY="72.0" onContextMenuRequested="#urchoice" prefHeight="25.0" prefWidth="181.0" />
+      <Button fx:id="confirm" layoutX="583.0" layoutY="120.0" mnemonicParsing="false" onAction="#urchoice" prefHeight="25.0" prefWidth="181.0" text="Zatwierdź" />
+      <TextField fx:id="adressField" layoutX="583.0" layoutY="170.0" prefHeight="25.0" prefWidth="181.0" />
+      <TextField fx:id="dayField" alignment="CENTER" layoutX="588.0" layoutY="207.0" prefHeight="25.0" prefWidth="42.0" promptText="DD" />
+      <TextField fx:id="monthField" alignment="CENTER" layoutX="644.0" layoutY="207.0" prefHeight="25.0" prefWidth="42.0" promptText="MM" />
+      <TextField fx:id="yearField" alignment="CENTER" layoutX="712.0" layoutY="207.0" prefHeight="25.0" prefWidth="51.0" promptText="RRRR" />
+      <ChoiceBox fx:id="clientPicker" layoutX="583.0" layoutY="245.0" prefHeight="25.0" prefWidth="181.0" />
+      <Button fx:id="add" layoutX="583.0" layoutY="295.0" mnemonicParsing="false" onAction="#addOrder" prefHeight="25.0" prefWidth="181.0" text="Dodaj to zamówienie" />
+      <Button fx:id="addClientButton" layoutX="583.0" layoutY="345.0" mnemonicParsing="false" onAction="#addClient" prefHeight="25.0" prefWidth="181.0" text="Dodaj nowego klienta!" />
+      <Button fx:id="editButton" layoutX="583.0" layoutY="391.0" mnemonicParsing="false" onAction="#openEdit" prefHeight="34.0" prefWidth="181.0" text="Edycja danych w bazie" />
+      <Button fx:id="logOut" layoutX="693.0" layoutY="481.0" mnemonicParsing="false" onAction="#outlog" text="Wyloguj" />
+      <Label layoutX="425.0" layoutY="31.0" text="Nowe zamówienie" />
+      <Label layoutX="55.0" layoutY="31.0" text="Lista zamówień" />
+      <ListView fx:id="listView" layoutX="14.0" layoutY="58.0" prefHeight="472.0" prefWidth="433.0" />
+      <Label layoutX="522.0" layoutY="174.0" text="Adres" />
+      <Label layoutX="522.0" layoutY="249.0" text="Klient" />
+      <Label layoutX="492.0" layoutY="76.0" text="Typ Klienta" />
+      <Label layoutX="542.0" layoutY="349.0" text="lub:" />
+      <Label layoutX="376.0" layoutY="290.0" />
+      <Label layoutX="525.0" layoutY="211.0" text="Data" />
+      <Label layoutX="633.0" layoutY="211.0" text="/" />
+      <Label layoutX="693.0" layoutY="211.0" text="/" />     
+   </children>
+</Pane>

@@ -1,0 +1,36 @@
+
+.myDialogs{
+    -fx-background-color: #287687;
+}
+.myDialogs > *.label.content{
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill:white;
+}
+.myDialogs:header *.header-panel{
+    -fx-background-color:#287687 ;
+}
+.myDialogs:header *.header-panel *.label{
+    -fx-font-size: 18px;
+    -fx-font-style: italic;
+    -fx-text-fill:white;
+}
+.button{
+    -fx-text-fill: white;
+    -fx-background-color: #1786a3;
+    -fx-border-color: white;
+    -fx-border-width: 2px;
+    -fx-border-style:solid;
+    -fx-font-size: 12;
+}
+.button:hover{
+-fx-background-color:#1987b4;
+}
+.button:pressed{
+    -fx-text-fill: white;
+    -fx-background-color: #2897b4;
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-font-size: 13;
+    -fx-border-style: solid;
+}
